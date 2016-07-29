@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160728053252) do
+ActiveRecord::Schema.define(version: 20160729054218) do
+
+  create_table "friendships", force: :cascade do |t|
+    t.integer  "User_id"
+    t.integer  "Friend_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "stocks", force: :cascade do |t|
     t.string   "ticker"
