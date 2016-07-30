@@ -15,7 +15,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'stock_quote'
-gem 'pg'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -47,3 +46,6 @@ group :development do
   gem 'spring'
 end
 
+group :deployment do
+  gem 'pg'
+end
